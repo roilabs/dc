@@ -31,10 +31,16 @@
             </div>
         </nav>
         <div class="container">
-            <section class="col-sm-10 jumbotron">
-                HEllo World
+            <section class="col-sm-7 jumbotron">
+
+                
+
+                <div id="vmap" style="width: 500px; height: 300px;"></div>
+
+
+
             </section>
-            <section class="col-sm-2">
+            <section class="col-sm-5">
                 Site Details
             </section>
         </div>
@@ -73,6 +79,26 @@
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+        <script src="js/jquery.vmap.js"></script>
+        <script src="js/jquery.vmap.world.js"></script>
+        <script src="js/jquery.vmap.sampledata.js"></script>
+
+        <script>
+            jQuery('#vmap').vectorMap({
+                map: 'world_en',
+                backgroundColor: null,
+                color: '#ffffff',
+                hoverOpacity: 0.7,
+                selectedColor: '#666666',
+                enableZoom: true,
+                showTooltip: true,
+                values: sample_data,
+                scaleColors: ['#C8EEFF', '#006491'],
+                normalizeFunction: 'polynomial'
+            });
+        </script>
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/bootstrap.js"></script>
         <script src="js/plugins.js"></script>
