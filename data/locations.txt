@@ -3,54 +3,54 @@
         "title": "Basingstoke",
         "latitude": 51.2665,
         "longitude": -1.0924,
-        "description": "OTDC",
+        "description": "OTDC"
     },
     {
         "title": "Farnborough",
         "latitude": 51.2869,
         "longitude": -0.7526,
-        "description": "OTDC2",
+        "description": "OTDC2"
     },
     {
         "title": "London",
         "latitude": 51.5002,
         "longitude": -0.1262,
         "label": "London",
-        "description": "60 Victoria Embancment",
+        "description": "60 Victoria Embancment"
     },
     {
         "title": "Tokyo",
         "latitude": 35.6785,
-        "longitude": 139.6823,
+        "longitude": 139.6823
     },
     {
         "title": "Hong Kong",
         "latitude": 22.3964,
-        "longitude": 114.1095,
+        "longitude": 114.1095
     },
     {
         "title": "Singapore",
         "latitude": 1.2894,
         "longitude": 103.8500,
-        "label": "Singapore",
+        "label": "Singapore"
     },
     {
         "title": "New York",
         "latitude": 40.8404,
         "longitude": -74.0907,
         "label": "New York",
-        "description": " Carlstad DC",
+        "description": " Carlstad DC"
     },
     {
         "title": "Delaware",
         "latitude": 39.6293,
         "longitude": -75.6583,
-        "description": "CDC1",
+        "description": "CDC1"
     },
     {
         "title": "Dallas",
         "latitude": 32.974586,
         "longitude": -96.889900,
-        "description": "EDC1",
+        "description": "EDC1"
     }
 ]
