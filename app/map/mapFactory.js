@@ -10,7 +10,7 @@
         };
 
         function getDataImp() {
-            return $http.get('data/locations.txt')
+            return $http.get('http://localhost:8000/locations')
         }
 
 
