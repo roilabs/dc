@@ -1,7 +1,9 @@
 (function () {
 
-    var app = angular.module('dcApp', []);
-    app.controller('dcCtrl', function ($scope) {
+    var app = angular.module('dcApp');
+    app.controller('dcCtrl', dcCtrl);
+
+    function dcCtrl($scope) {
 
         vm = this
 
@@ -109,6 +111,6 @@
             showImagesInList: true
         });
 
-    });
+    }
 
 })();
