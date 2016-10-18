@@ -1,9 +1,10 @@
 var app = angular.module('dcApp', []);
 app.controller('dcCtrl', function ($scope) {
 
+    vm = this
 
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
+    vm.firstName = "John";
+    vm.lastName = "Doe";
 
 
 
