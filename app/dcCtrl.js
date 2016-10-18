@@ -3,7 +3,7 @@
     var app = angular.module('dcApp');
     app.controller('dcCtrl', dcCtrl);
 
-    function dcCtrl($scope) {
+    function dcCtrl($scope, $http) {
 
         vm = this
 
@@ -83,7 +83,10 @@
             "description": "EDC1",
         }]
 
-
+        $http.get('data/locations.json')
+            .then(function (response) {
+                vm.dclocations = response.data;
+            });
 
         var map = AmCharts.makeChart("mapdiv", {
             type: "map",
