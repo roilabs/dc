@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html class="no-js" lang="" ng-app="dcApp" ng-controller="dcCtrl as vm">
+<html class="no-js" lang="" ng-app="dcApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -33,32 +33,8 @@
         </div>
     </nav>
 
-    <section class="col-sm-12 jumbotron">
-        <div class="col-sm-2">
-            <div id="listdiv" style="width:200px; overflow:auto; height:300px; float:left; background-color:#EEEEEE;"></div>
-        </div>
-        <div class="col-sm-7">
-            <div id="mapdiv" style="background-color:#EEEEEE; height: 300px;"></div>
-        </div>
-        <div class="col-sm-3">
-            DC Address
-        </div>
-    </section>
-    {{vm.dclocations}}
-    <div class="col-sm-4 jumbotron">
-        <h2>Site Manager</h2>
-        hello
-    </div>
-    <div class="col-sm-4 jumbotron">
-        <h2>Site Lead</h2>
-        world
-    </div>
-    <div class="col-sm-4 jumbotron">
-        <h2>Site Enginners</h2>
-        here
-    </div>
-    </section>
-    </div>
+    <div ng-view></div>
+
     <hr />
     <footer>
         <div class="container"
@@ -72,10 +48,12 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.js"></script>
     <script src="js/vendor/angular.js"></script>
+    <script src="js/vendor/angular-route.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="app/app.js"></script>
-    <script src="app/dcCtrl.js"></script>
+    <script src="app/map/mapapp.js"></script>
+    <script src="app/map/mapController.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function (b, o, i, l, e, r) {

@@ -1,9 +1,9 @@
 (function () {
 
-    var app = angular.module('dcApp');
-    app.controller('dcCtrl', dcCtrl);
+    var app = angular.module('mapApp');
+    app.controller('mapController', mapController);
 
-    function dcCtrl($scope, $http) {
+    function mapController($scope, $http) {
 
         vm = this
 
