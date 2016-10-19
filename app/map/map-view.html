@@ -1,54 +1,51 @@
-﻿
-<section class="col-sm-12 jumbotron">
-    <div class="col-sm-3">
-        <div id="listdiv" style="display: none; width:200px; overflow:auto; height:300px; float:left; background-color:#EEEEEE;"></div>
-        <div ng-repeat="item in vm.dclocations | filter: {title: vm.selectedDC}">
-            <h3>{{item.title}}</h3>
-            <div style="margin-top: 50px">
-                <table class="table table-hover">
-                    <tr>
-                        <th>Address</th>
-                        <td>{{item.address}}</td>
-                    </tr>
-                    <tr>
-                        <th>Size</th>
-                        <td>{{item.size | number}} sqft</td>
-                    </tr>
-                    <tr>
-                        <th>Power</th>
-                        <td>{{item.power | number}} kw</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div id="mapdiv" style="background-color:#EEEEEE; height: 300px;"></div>
-    </div>
-    <div class="col-sm-3">
-        <div ng-repeat="dc in vm.dclocations | filter: {title: vm.selectedDC}">
-            <h3>Site Engagement</h3>
-            <div style="margin-top: 50px">
-                <table class="table table-hover">
-                    <tr>
-                        <th>Incidents</th>
-                        <td>{{dc.faults}}</td>
-                    </tr>
-                    <tr>
-                        <th>Planned Works</th>
-                        <td>{{dc.planned}}</td>
-                    </tr>
-                    <tr>
-                        <th>Change Control</th>
-                        <td>{{dc.ccontrol}}</td>
-                    </tr>
-                </table>
-                <a class="btn btn-default btn-xs" href="#/contact/{{dc.title}}"><span class="glyphicon glyphicon-user"></span> </span>Contact Site</a>
-            </div>
-        </div>
-    </div>
+﻿<section class="col-sm-12 jumbotron">
+	<div class="col-sm-3">
+		<div id="listdiv" style="display: none; width:200px; overflow:auto; height:300px; float:left; background-color:#EEEEEE;"></div>
+		<div ng-repeat="item in vm.dclocations | filter: {title: vm.selectedDC}">
+			<h3>{{item.title}}</h3>
+			<div style="margin-top: 50px">
+				<table class="table table-hover">
+					<tr>
+						<th>Address</th>
+						<td>{{item.address}}</td>
+					</tr>
+					<tr>
+						<th>Size</th>
+						<td>{{item.size | number}} sqft</td>
+					</tr>
+					<tr>
+						<th>Power</th>
+						<td>{{item.power | number}} kw</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div id="mapdiv" style="background-color:#EEEEEE; height: 300px;"></div>
+	</div>
+	<div class="col-sm-3">
+		<div ng-repeat="dc in vm.dclocations | filter: {title: vm.selectedDC}">
+			<h3>Site Engagement</h3>
+			<div style="margin-top: 50px">
+				<table class="table table-hover">
+					<tr>
+						<th>Incidents</th>
+						<td>{{dc.faults}}</td>
+					</tr>
+					<tr>
+						<th>Planned Works</th>
+						<td>{{dc.planned}}</td>
+					</tr>
+					<tr>
+						<th>Change Control</th>
+						<td>{{dc.ccontrol}}</td>
+					</tr>
+
+					</tbody>
+				</table>
+				<a class="btn btn-default btn-xs" href="#/contact/{{dc.title}}"><span class="glyphicon glyphicon-user"></span> </span>Contact Site</a>
+			</div>
+		</div>
+	</div>
 </section>
-
-
-
-
