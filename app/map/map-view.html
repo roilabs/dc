@@ -24,37 +24,23 @@
         <div id="mapdiv" style="background-color:#EEEEEE; height: 300px;"></div>
     </div>
     <div class="col-sm-3">
-        <div ng-repeat="item in vm.dclocations | filter: {title: vm.selectedDC}" style="margin-top: 75px">
+        <div ng-repeat="dc in vm.dclocations | filter: {title: vm.selectedDC}" style="margin-top: 75px">
             <h3>Site Engagement</h3>
             <table class="table table-hover">
                 <tr>
                     <th>Incidents</th>
-                    <td>{{item.faults}}</td>
+                    <td>{{dc.faults}}</td>
                 </tr>
                 <tr>
                     <th>Planned Works</th>
-                    <td>{{item.planned}}</td>
+                    <td>{{dc.planned}}</td>
                 </tr>
                 <tr>
                     <th>Change Control</th>
-                    <td>{{item.ccontrol}}</td>
+                    <td>{{dc.ccontrol}}</td>
                 </tr>
             </table>
-            <btn class="btn btn-primary">Contact Site</btn>
+            <a class="btn btn-primary" href="#/contact/{{dc.dc_id}}">Contact Site</a>
         </div>
     </div>
 </section>
-<div class="col-sm-4 jumbotron">
-    <h2>Site Manager</h2>
-    hello
-</div>
-<div class="col-sm-4 jumbotron">
-    <h2>Site Lead</h2>
-    world
-</div>
-<div class="col-sm-4 jumbotron">
-    <h2>Site Enginners</h2>
-    here
-</div>
-    </section>
-    </div>

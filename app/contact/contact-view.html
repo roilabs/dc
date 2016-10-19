@@ -1,0 +1,36 @@
+﻿
+<section class="container">
+    <div class="col-sm-4">
+        <div class="jumbotron">
+            <div ng-repeat="contact in vm.dccontacts | filter: {role: 'Site Manager'}">
+                <h2>Site Manager</h2>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Address</th>
+                        <td>{{contact.first_name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Size</th>
+                        <td>{{contact.last_name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Power</th>
+                        <td>{{contact.name}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="jumbotron">
+            <h2>Site Lead</h2>
+            world
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="jumbotron">
+            <h2>Site Enginners</h2>
+            here
+        </div>
+    </div>
+</section>
