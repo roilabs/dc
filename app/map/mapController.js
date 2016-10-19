@@ -10,7 +10,7 @@
         mapFactory.getData().then(display)
 
         function display(response) {
-            vm.dclocations = response.data;
+            vm.dclocations = response.data.images;
         }
 
         vm.selectedDC = [];
@@ -21,13 +21,12 @@
 
         var map = AmCharts.makeChart("mapdiv", {
             type: "map",
-
             projection: "miller",
             imagesSettings: {
-                rollOverColor: "#CC0000",
+                rollOverColor: "blue",
                 rollOverScale: 3,
                 selectedScale: 3,
-                selectedColor: "#CC0000"
+                selectedColor: "blue"
             },
 
             areasSettings: {
