@@ -13,7 +13,7 @@
 
         function display(response) {
 
-            vm.dccontacts = filterFilter(response.data, { dc_id: vm.dclocation });
+            vm.dccontacts = filterFilter(response.data, { name: vm.dclocation });
          
         }
 
