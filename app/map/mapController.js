@@ -19,6 +19,7 @@
         var targetZoomLevel = 25;
         var targetScale = 0.5;     
         var icon = "M21.25,8.375V28h6.5V8.375H21.25zM12.25,28h6.5V4.125h-6.5V28zM3.25,28h6.5V12.625h-6.5V28z";
+
         var map = AmCharts.makeChart("mapdiv", {
             type: "map",
             projection: "miller",
@@ -26,10 +27,11 @@
                 rollOverColor: "red",
                 rollOverScale: 3,
                 selectedScale: 3,
-                selectedColor: "red",
-                "svgPath": icon
+                selectedColor: "red"
             },
-
+            balloon: {
+                enabled: false
+            },
             areasSettings: {
                 outlineThickness: 0.5,
                 autoZoom: true,
