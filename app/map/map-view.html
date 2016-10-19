@@ -2,11 +2,11 @@
 	<div class="col-sm-3">
 		<div id="listdiv" style="display: none; width:200px; overflow:auto; height:300px; float:left; background-color:#EEEEEE;"></div>
 		<div ng-repeat="item in vm.dclocations | filter: {title: vm.selectedDC}">
-			<h3>{{item.title}}</h3>
+			<h3> <kbd>{{item.title}} </kbd></h3>
 			<div style="margin-top: 50px">
 				<table class="table table-hover">
 					<tr>
-						<th>Address</th>
+						<th><Address</th>
 						<td>{{item.address}}</td>
 					</tr>
 					<tr>
@@ -26,7 +26,7 @@
 	</div>
 	<div class="col-sm-3">
 		<div ng-repeat="dc in vm.dclocations | filter: {title: vm.selectedDC}">
-			<h3>Site Engagement</h3>
+			<h3> <kbd>Site Engagement </kbd></h3>
 			<div style="margin-top: 50px">
 				<table class="table table-hover">
 					<tr>
@@ -40,6 +40,10 @@
 					<tr>
 						<th>Change Control</th>
 						<td>{{dc.ccontrol}}</td>
+					</tr>	
+                    <tr>
+						<th>Hot Line</th>
+						<td><span class="glyphicon glyphicon-earphone"></span>{{dc.hotline}}</td>
 					</tr>
 
 					</tbody>
