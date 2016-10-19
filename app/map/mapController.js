@@ -27,7 +27,7 @@
                 rollOverScale: 3,
                 selectedScale: 3,
                 selectedColor: "red",
-                "svgPath": icon
+            
             },
 
             areasSettings: {
