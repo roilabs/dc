@@ -12,11 +12,11 @@
                     </tr>
                     <tr>
                         <th>Size</th>
-                        <td>{{item.size}}</td>
+                        <td>{{item.size | number}} sqft</td>
                     </tr>
                     <tr>
                         <th>Power</th>
-                        <td>{{item.power}}</td>
+                        <td>{{item.power | number}} kw</td>
                     </tr>
                 </table>
             </div>
@@ -43,7 +43,7 @@
                         <td>{{dc.ccontrol}}</td>
                     </tr>
                 </table>
-                <a class="btn btn-primary" href="#/contact/{{dc.title}}">Contact Site</a>
+                <a class="btn btn-primary" href="#/contact/{{dc.title}}"><span class="glyphicon glyphicon-user"></span> Contact Site</a>
             </div>
         </div>
     </div>
