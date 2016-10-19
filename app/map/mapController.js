@@ -35,7 +35,10 @@
             areasSettings: {
                 outlineThickness: 0.5,
                 autoZoom: true,
-                selectable: true
+                selectable: true,
+                color: "#D3D1D0",
+                selectedColor: "#C1E1E0",
+                rollOverColor: "#E5E3E2"
             },
             dataLoader: {
                 url: "http://localhost:8000/locations",
