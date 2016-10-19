@@ -2,71 +2,35 @@
 <section class="container">
     <div class="col-sm-4">
         <div class="jumbotron">
+            <div ng-repeat="contact in vm.dccontacts | filter: {role: 'Site Manager'}">
                 <h2>Site Manager</h2>
-                <table class="table table-hover" ng-repeat="contact in vm.dccontacts | filter: {role: 'Site Manager'}">
+                <table class="table table-hover">
                     <tr>
-                        <th>First Name</th>
+                        <th>Address</th>
                         <td>{{contact.first_name}}</td>
                     </tr>
                     <tr>
-                        <th>Last Name</th>
+                        <th>Size</th>
                         <td>{{contact.last_name}}</td>
                     </tr>
                     <tr>
-                        <th>Email</th>
-                        <td>{{contact.email}}</td>
-                    </tr>
-                    <tr>
-                        <th>Phone #</th>
-                        <td>{{contact.phone}}</td>
+                        <th>Power</th>
+                        <td>{{contact.name}}</td>
                     </tr>
                 </table>
+            </div>
         </div>
     </div>
     <div class="col-sm-4">
         <div class="jumbotron">
-                <h2>Site Lead</h2>
-                <table class="table table-hover" ng-repeat="contact in vm.dccontacts | filter: {role: 'Site Lead'}">
-                    <tr>
-                        <th>First Name</th>
-                        <td>{{contact.first_name}}</td>
-                    </tr>
-                    <tr>
-                        <th>Last Name</th>
-                        <td>{{contact.last_name}}</td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td>{{contact.email}}</td>
-                    </tr>
-                    <tr>
-                        <th>Phone #</th>
-                        <td>{{contact.phone}}</td>
-                    </tr>
-                </table>
+            <h2>Site Lead</h2>
+            world
         </div>
     </div>
     <div class="col-sm-4">
         <div class="jumbotron">
-                <h2>Site Enginner</h2>
-                <table class="table table-hover" ng-repeat="contact in vm.dccontacts | filter: {role: 'Site Enginner'}">
-                    <tr>
-                        <th>First Name</th>
-                        <td>{{contact.first_name}}</td>
-                    </tr>
-                    <tr>
-                        <th>Last Name</th>
-                        <td>{{contact.last_name}}</td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td>{{contact.email}}</td>
-                    </tr>
-                    <tr>
-                        <th>Phone #</th>
-                        <td>{{contact.phone}}</td>
-                    </tr>
-                </table>
+            <h2>Site Enginners</h2>
+            here
         </div>
     </div>
 </section>
