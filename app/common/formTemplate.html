@@ -5,10 +5,26 @@
 </div>
 <div class="row">
     <div class="container">
-        <form name="vm.editForm">
-            Email: <input required pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}" name="emailaddress" type="text" ng-model="vm.emailaddress" /><br />
+        <form name="mapc.editForm" class="col-sm-6">
 
-            <button ng-disabled="vm.editForm.$invalid" ng-click="vm.add()">Add</button>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="password" class="form-control" id="name" ng-model="mapc.name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input class="form-control" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" name="emailaddress" type="email" ng-model="mapc.emailaddress" />
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea required class="form-control" rows="5" id="comment" ng-model="mapc.comments"></textarea>
+            </div>
+
+
+
+            <button ng-disabled="mapc.editForm.$invalid" class="btn btn-success" ng-click="mapc.submit()">Submit</button>
         </form>
+        {{vm.editForm}}
     </div>
 </div>
