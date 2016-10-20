@@ -14,6 +14,7 @@
 
         function setSelectedUserEmail(user) {
             vm.selectedUserEmail = user
+           // console.log(typeof(vm.selectedUserEmail.first_name ) )
         }
 
         contactFactory.getData().then(display)
