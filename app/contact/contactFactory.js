@@ -12,8 +12,6 @@
         function getDataImp() {
             return $http.get('http://localhost:8000/contacts')
         }
-
-
     }
 
 })();

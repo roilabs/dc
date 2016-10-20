@@ -16,8 +16,7 @@
             vm.dccontacts = filterFilter(response.data, { name: vm.dclocation });
          
         }
-
-
     }
 
 })();
+
