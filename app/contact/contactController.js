@@ -9,6 +9,13 @@
 
         vm.dclocation = $routeParams.siteId
 
+        vm.selectedUserEmail = [];
+        vm.setSelectedUserEmail = setSelectedUserEmail;
+
+        function setSelectedUserEmail(user) {
+            vm.selectedUserEmail = user
+        }
+
         contactFactory.getData().then(display)
 
         function display(response) {

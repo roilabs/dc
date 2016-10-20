@@ -14,7 +14,7 @@
                     </tr>
                     <tr>
                         <th>Email</th>
-                        <td>{{contact.email}} <span class="glyphicon glyphicon-envelope" data-toggle="modal" data-target="#myModal"></span></td>
+                        <td>{{contact.email}} <span class="glyphicon glyphicon-envelope" data-toggle="modal" data-target="#myModal" ng-click="vm.setSelectedUserEmail(contact)"></span></td>
                     </tr>
                     <tr>
                         <th>Phone #</th>
@@ -37,7 +37,7 @@
                     </tr>
                     <tr>
                         <th>Email</th>
-                        <td>{{contact.email}} <span class="glyphicon glyphicon-envelope" data-toggle="modal" data-target="#myModal"></span></td>
+                        <td>{{contact.email}} <span class="glyphicon glyphicon-envelope" data-toggle="modal" data-target="#myModal" ng-click="vm.setSelectedUserEmail(contact)"></span></td>
                     </tr>
                     <tr>
                         <th>Phone #</th>
@@ -60,7 +60,7 @@
                     </tr>
                     <tr>
                         <th>Email</th>
-                        <td>{{contact.email}} <span class="glyphicon glyphicon-envelope" data-toggle="modal" data-target="#myModal"></span></td>
+                        <td>{{contact.email}} <i class="glyphicon glyphicon-envelope" data-toggle="modal" data-target="#myModal" ng-click="vm.setSelectedUserEmail(contact)"></i></td>
                     </tr>
                     <tr>
                         <th>Phone #</th>
@@ -77,10 +77,10 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title">Contact </h4>
                 </div>
                 <div class="modal-body">
-                    {{contact.first_name}}
+                    <form-template current-user-email={{vm.selectedUserEmail}}></form-template>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
