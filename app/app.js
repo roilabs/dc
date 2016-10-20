@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    var app = angular.module('dcApp', ['ngRoute', 'mapApp', 'contactApp']);
+    var app = angular.module('dcApp', ['ngRoute', 'ui.bootstrap', 'mapApp', 'contactApp']);
 
     app.config(function ($routeProvider) {
         $routeProvider

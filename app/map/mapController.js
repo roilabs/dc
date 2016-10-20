@@ -25,8 +25,8 @@
             projection: "miller",
             imagesSettings: {
                 rollOverColor: "red",
-                rollOverScale: 3,
-                selectedScale: 3,
+                rollOverScale: 2,
+                selectedScale: 2,
                 selectedColor: "red"
             },
             balloon: {

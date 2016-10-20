@@ -25,6 +25,7 @@
 		<div id="mapdiv" style="background-color:#EEEEEE; height: 300px;"></div>
 	</div>
 	<div class="col-sm-3">
+        <img ng-hide="vm.selectedDC.length > 0" class="img img-responsive" src="img/dc.png" style="margin-top: 50px" />
 		<div ng-repeat="dc in vm.dclocations | filter: {title: vm.selectedDC}">
 			<h3> <kbd>Site Engagement </kbd></h3>
 			<div style="margin-top: 50px">
