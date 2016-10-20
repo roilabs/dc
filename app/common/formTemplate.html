@@ -1,2 +1,14 @@
-﻿
-Send email to: {{vm.currentUserEmail}}
+﻿<div class="row">
+    <div class="container">
+        <h4>Emailing: {{vm.currentUserEmail}}</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <form name="vm.editForm">
+            Email: <input required pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}" name="emailaddress" type="text" ng-model="vm.emailaddress" /><br />
+
+            <button ng-disabled="vm.editForm.$invalid" ng-click="vm.add()">Add</button>
+        </form>
+    </div>
+</div>

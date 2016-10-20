@@ -2,56 +2,56 @@
 	<div class="col-sm-2">
 		<div id="listdiv" style="display: none; width:200px; overflow:auto; height:300px; float:left; background-color:#EEEEEE;"></div>
         <img ng-hide="vm.selectedDC.length > 0" class="img img-responsive" src="img/building.png" style="margin-top: 75px; margin-left: -50px;" />
-		<div ng-repeat="item in vm.dclocations | filter: {title: vm.selectedDC}">
-			<h3> <kbd>{{item.title}} </kbd></h3>
-			<div style="margin-top: 50px; margin-left: -50px;">
-				<table class="table table-hover">
-					<tr>
-						<th>Address</th>
-						<td>{{item.address}}</td>
-					</tr>
-					<tr>
-						<th>Size</th>
-						<td>{{item.size | number}} sqft</td>
-					</tr>
-					<tr>
-						<th>Power</th>
-						<td>{{item.power | number}} kw</td>
-					</tr>
-				</table>
-			</div>
-		</div>
+        <div class="fade-me" ng-repeat="item in vm.dclocations | filter: {title: vm.selectedDC}">
+            <h3> <kbd>{{item.title}} </kbd></h3>
+            <div style="margin-top: 50px; margin-left: -50px;">
+                <table class="table table-hover">
+                    <tr>
+                        <th>Address</th>
+                        <td>{{item.address}}</td>
+                    </tr>
+                    <tr>
+                        <th>Size</th>
+                        <td>{{item.size | number}} sqft</td>
+                    </tr>
+                    <tr>
+                        <th>Power</th>
+                        <td>{{item.power | number}} kw</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 	</div>
 	<div class="col-sm-7">
 		<div id="mapdiv" style="background-color:#EEEEEE; height: 300px;"></div>
 	</div>
 	<div class="col-sm-3">
         <img ng-hide="vm.selectedDC.length > 0" class="img img-responsive" src="img/dc.png" style="margin-top: 50px" />
-		<div ng-repeat="dc in vm.dclocations | filter: {title: vm.selectedDC}">
-			<h3> <kbd>Site Engagement </kbd></h3>
-			<div style="margin-top: 50px">
-				<table class="table table-hover">
-					<tr>
-						<th>Incidents</th>
-						<td>{{dc.faults}}</td>
-					</tr>
-					<tr>
-						<th>Planned Works</th>
-						<td>{{dc.planned}}</td>
-					</tr>
-					<tr>
-						<th>Change Control</th>
-						<td>{{dc.ccontrol}}</td>
-					</tr>	
+        <div class="fade-me" ng-repeat="dc in vm.dclocations | filter: {title: vm.selectedDC}">
+            <h3> <kbd>Site Engagement </kbd></h3>
+            <div style="margin-top: 50px">
+                <table class="table table-hover">
                     <tr>
-						<th>Hot Line</th>
-						<td><span class="glyphicon glyphicon-earphone"></span> {{dc.hotline}}</td>
-					</tr>
+                        <th>Incidents</th>
+                        <td>{{dc.faults}}</td>
+                    </tr>
+                    <tr>
+                        <th>Planned Works</th>
+                        <td>{{dc.planned}}</td>
+                    </tr>
+                    <tr>
+                        <th>Change Control</th>
+                        <td>{{dc.ccontrol}}</td>
+                    </tr>
+                    <tr>
+                        <th>Hot Line</th>
+                        <td><span class="glyphicon glyphicon-earphone"></span> {{dc.hotline}}</td>
+                    </tr>
 
-					</tbody>
-				</table>
-				<a class="btn btn-default btn-xs" href="#/contact/{{dc.title}}"><span class="glyphicon glyphicon-user"></span> Contact Site</a>
-			</div>
-		</div>
+                    </tbody>
+                </table>
+                <a class="btn btn-default btn-xs" href="#/contact/{{dc.title}}"><span class="glyphicon glyphicon-user"></span> Contact Site</a>
+            </div>
+        </div>
 	</div>
 </section>

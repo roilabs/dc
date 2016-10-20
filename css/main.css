@@ -280,3 +280,11 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+
+
+.fade-me.ng-enter {
+    animation: 1.0s rubberBand;
+
+}
