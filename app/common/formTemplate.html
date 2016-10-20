@@ -10,7 +10,7 @@
 
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="password" class="form-control" id="name" ng-model="mapc.name">
+                <input type="text" class="form-control" id="name" ng-model="mapc.name">
             </div>
             <div class="form-group">
                 <label for="email">Email address:</label>
@@ -20,11 +20,7 @@
                 <label for="comment">Comment:</label>
                 <textarea required class="form-control" rows="5" id="comment" ng-model="mapc.comments"></textarea>
             </div>
-
-
-
-            <button ng-disabled="mapc.editForm.$invalid" class="btn btn-success" ng-click="mapc.submit()">Submit</button>
+            <button ng-disabled="mapc.editForm.$invalid" class="btn btn-success fade-me" ng-click="mapc.submit()">Submit</button>
         </form>
-        {{vm.editForm}}
     </div>
 </div>

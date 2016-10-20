@@ -288,3 +288,9 @@ textarea {
     animation: 1.0s rubberBand;
 
 }
+
+
+.fade-me.ng-disabled {
+    animation: 1.0s rubberBand;
+
+}
